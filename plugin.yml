@@ -1,0 +1,39 @@
+﻿name: DadaStaffTools
+version: '1.0.0'
+main: it.dadasmp.stafftools.DadaStaffToolsPlugin
+api-version: '1.20'
+author: DadaSMP
+description: Comandi staff per aprire inventari ed enderchest dei player.
+softdepend:
+  - LuckPerms
+commands:
+  invsee:
+    description: Apre l'inventario di un player online.
+    usage: /invsee <player>
+    aliases:
+      - openinv
+  endersee:
+    description: Apre l'enderchest di un player online.
+    usage: /endersee <player>
+    aliases:
+      - ecsee
+      - openec
+  stafftools:
+    description: Mostra le informazioni del plugin.
+    usage: /stafftools
+    aliases:
+      - dstaff
+permissions:
+  dadastafftools.invsee:
+    description: Permette di usare /invsee <player>.
+    default: op
+  dadastafftools.endersee:
+    description: Permette di usare /endersee <player>.
+    default: op
+  dadastafftools.bypass.self:
+    description: Permette di aprire il proprio inventario o enderchest con i comandi staff.
+    default: op
+  dadastafftools.admin:
+    description: Permette di usare /stafftools.
+    default: op
+
